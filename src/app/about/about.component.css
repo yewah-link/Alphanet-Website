@@ -181,3 +181,81 @@ ul {
     opacity: 1; /* Fully opaque */
   }
 }
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+  /* General styles */
+  body {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  /* Who we are section */
+  .whoWeAre {
+    font-size: 16px; /* Reduce font size for better readability */
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 2cm; /* Adjust top margin for smaller screens */
+  }
+
+  .section-title h2 {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  /* Content container styles */
+  .content-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px 0; /* Reduce padding */
+  }
+
+  /* Text content styles */
+  .text-content {
+    width: 100%; /* Full width */
+    margin-right: 0; /* No margin on the right */
+    margin-bottom: 20px; /* Add space below */
+    animation: none; /* Disable animation for simplicity */
+    opacity: 1; /* Ensure visibility */
+  }
+
+  .text-content h1 {
+    font-size: 36px; /* Reduce header font size */
+  }
+
+  .text-content p {
+    font-size: 16px; /* Reduce paragraph font size */
+  }
+
+  /* Image container styles */
+  .image-container {
+    width: 100%; /* Full width */
+    text-align: center; /* Center align */
+    animation: none; /* Disable animation */
+    opacity: 1; /* Ensure visibility */
+  }
+
+  /* Additional container styles */
+  .additional-container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .additional-image-container {
+    width: 100%; /* Full width */
+    margin-right: 0; /* No margin */
+    margin-bottom: 20px; /* Add space below */
+    animation: none; /* Disable animation */
+    opacity: 1; /* Ensure visibility */
+  }
+
+  .additional-text-content {
+    width: 100%; /* Full width */
+    animation: none; /* Disable animation */
+    opacity: 1; /* Ensure visibility */
+  }
+
+  .additional-text-content h2 {
+    font-size: 20px; /* Reduce font size */
+  }
+
+  .additional-text-content p {
+    font-size: 14px; /* Reduce font size */
+  }
+}

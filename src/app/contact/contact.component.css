@@ -426,3 +426,76 @@ textarea {
   background-color: #ff6600; /* Button background color on hover */
   color: #fff; /* Button text color on hover */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Adjust Packages Section for mobile */
+  .packages-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .package {
+    margin: 10px 0;
+    width: 90%; /* Full width on smaller screens */
+    padding: 80px;
+  }
+
+  .Packages h1 {
+    font-size: 32px;
+  }
+
+  .contact-number {
+    font-size: 18px;
+  }
+
+  /* Adjust Packages-connections Section for mobile */
+  .info-member {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 10px 0;
+  }
+
+  .Packages-connections h1 {
+    font-size: 24px;
+  }
+
+  /* Why We Are Better Section for mobile */
+  .why-we-are-better .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-we-are-better .image-container,
+  .why-we-are-better .text-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .why-we-are-better .text-content h2 {
+    font-size: 28px;
+  }
+
+  /* Adjust Contact Us Section for mobile */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-container,
+  .info-form-container {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .info-box {
+    max-width: 100%;
+  }
+
+  .form-box,
+  .form-box-message {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

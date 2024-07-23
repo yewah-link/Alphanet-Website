@@ -245,3 +245,63 @@ button.contact-sales:hover {
     opacity: 1; /* Fully opaque */
   }
 }
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+  .contact-bar,
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5px 20px;
+  }
+
+  .contact-info {
+    margin-bottom: 10px;
+  }
+
+  .social-icons {
+    margin-top: 10px;
+  }
+
+  .navbar .Menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar .Menu ul li {
+    margin: 10px 0;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .text-container {
+    max-width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+    animation: none; /* Disable animation on smaller screens for simplicity */
+    opacity: 1; /* Make text visible without animation */
+  }
+
+  .text-container h1 {
+    font-size: 40px;
+  }
+
+  .text-container .par {
+    font-size: 16px;
+  }
+
+  .image-container {
+    max-width: 100%;
+    animation: none; /* Disable animation on smaller screens */
+    opacity: 1; /* Make image visible without animation */
+  }
+
+  .image-container img {
+    border-radius: 0; /* Remove rounded corners */
+  }
+}

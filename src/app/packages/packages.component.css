@@ -307,3 +307,81 @@ body {
   font-size: 24px;
   margin-bottom: 10px;
 }
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  /* Packages Section */
+  .Packages h1 {
+    font-size: 32px; /* Reduce font size for smaller screens */
+  }
+
+  .contact-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the left */
+  }
+
+  .contact-number {
+    font-size: 20px; /* Reduce font size */
+    margin-bottom: 10px; /* Add space between stacked items */
+  }
+
+  .packages-container {
+    flex-direction: column; /* Stack packages vertically */
+    align-items: center; /* Center packages */
+    height: auto; /* Allow height to adjust automatically */
+  }
+
+  .package {
+    padding: 80px; /* Adjust padding */
+    margin: 10px 0; /* Reduce margin */
+  }
+
+  /* Packages-connections Section */
+  .Packages-connections h1 {
+    font-size: 24px; /* Reduce font size */
+  }
+
+  .info-box {
+    flex-direction: column; /* Stack info boxes vertically */
+    align-items: center; /* Center info boxes */
+  }
+
+  .info-member {
+    max-width: 90%; /* Adjust max width for small screens */
+  }
+
+  /* Why We Are Better Section */
+  .why-we-are-better .content-container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .why-we-are-better .image-container,
+  .why-we-are-better .text-content {
+    width: 100%; /* Use full width for each item */
+    margin-bottom: 20px; /* Add space between stacked items */
+  }
+
+  .why-we-are-better .text-content {
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .why-we-are-better .text-content h2 {
+    font-size: 28px; /* Reduce font size */
+  }
+
+  /* Our Best Services Section */
+  .our-best-services h2 {
+    font-size: 28px; /* Reduce font size */
+  }
+
+  .our-best-services .small-containers {
+    flex-direction: column; /* Stack service containers vertically */
+    align-items: center; /* Center service containers */
+  }
+
+  .our-best-services .container-left,
+  .our-best-services .container-right {
+    width: 90%; /* Use full width for each container */
+    margin: 10px 0; /* Add space between stacked containers */
+  }
+}

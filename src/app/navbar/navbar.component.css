@@ -144,3 +144,34 @@
   color: inherit;
   text-decoration: none;
 }
+
+/* Media Queries for small screens */
+@media (max-width: 768px) {
+  /* Hide specific contact info (phone number) */
+  .contact-info.phone {
+    display: none; /* Hide phone number on smaller screens */
+  }
+
+  .contact-bar {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    justify-content: space-between; /* Ensure spacing is correct */
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5px 20px; /* Adjust padding for smaller screens */
+  }
+
+  .navbar .icon .logo {
+    font-size: 18px; /* Adjust logo font size for smaller screens */
+  }
+
+  .navbar .Menu ul li {
+    margin-left: 20px; /* Adjust spacing between menu items */
+  }
+
+  .contact-sales {
+    font-size: 14px; /* Adjust font size for the contact-sales button */
+  }
+}

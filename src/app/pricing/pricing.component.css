@@ -166,3 +166,47 @@ body {
   from, to { border-color: transparent; }
   50% { border-color: transparent; } /* Cursor disappears after typing */
 }
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 768px) {
+  /* Why We Are Better Section */
+  .why-we-are-better .content-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 0; /* Remove horizontal padding */
+  }
+
+  .why-we-are-better .image-container,
+  .why-we-are-better .text-content {
+    width: 100%; /* Use full width for each item */
+    margin-bottom: 20px; /* Add space between stacked items */
+  }
+
+  .why-we-are-better .text-content {
+    padding-left: 0; /* Remove left padding */
+  }
+
+  .why-we-are-better .text-content h2 {
+    font-size: 28px; /* Reduce font size */
+  }
+
+  .why-we-are-better .text-content p,
+  .why-we-are-better .text-content h3 {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  /* Our Best Services Section */
+  .our-best-services .small-containers {
+    flex-direction: column; /* Stack service containers vertically */
+    align-items: center; /* Center service containers */
+  }
+
+  .our-best-services .container-left,
+  .our-best-services .container-right {
+    width: 90%; /* Use full width for each container */
+    margin: 10px 0; /* Add space between stacked containers */
+  }
+
+  .our-best-services h2 {
+    font-size: 28px; /* Reduce font size */
+  }
+}
