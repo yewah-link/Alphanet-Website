@@ -1,0 +1,168 @@
+/* Why We Are Better section */
+.why-we-are-better {
+  margin-top: 5cm;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 40px 20px;
+}
+
+.why-we-are-better .content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.why-we-are-better .image-container {
+  width: 50%;
+  background-image: url('../../assets/images/wifi7.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 10px;
+}
+
+.why-we-are-better .text-content {
+  width: 45%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.why-we-are-better .text-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.why-we-are-better .text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.why-we-are-better .text-content h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #ff6600;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.icon-text .icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ff6600;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.our-best-services {
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 40px 20px;
+}
+
+.centered-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.our-best-services h2 {
+  color: #011b33;
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden; /* Ensure overflow is hidden */
+  font-weight: 600;
+}
+
+.our-best-services p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.our-best-services .small-containers {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Add space between the containers */
+  margin-top: 20px;
+}
+
+.our-best-services .container-left,
+.our-best-services .container-right {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.our-best-services .container-left .wifi-icon {
+  font-size: 48px;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.our-best-services .container-left p,
+.our-best-services .container-right p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.our-best-services .view-details {
+  background-color: #ff6600; /* Set button background color */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+.our-best-services .view-details:hover {
+  background-color: #e65c00; /* Darker shade on hover */
+}
+
+.our-best-services .container-right h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.wifi-icon-best {
+  font-size: 48px;
+  color: #ff6600;
+  margin-right: 10px;
+}
+
+/* Typewriter Effect */
+.typewriter {
+  display: inline-block;
+  white-space: nowrap; /* Ensures text stays on a single line */
+}
+
+.typewriter .typewriter-text {
+  display: inline-block;
+  overflow: hidden; /* Ensures text is hidden */
+  white-space: nowrap; /* Ensures text stays on a single line */
+  border-right: 4px solid #ff6600; /* Cursor effect */
+  animation: typing 4s steps(40, end) 1s 1 normal both, blink-caret 0.75s step-end infinite; /* Adjust timing */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: transparent; } /* Cursor disappears after typing */
+}

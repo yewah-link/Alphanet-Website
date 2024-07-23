@@ -1,0 +1,35 @@
+<div class="contact-bar">
+  <div class="contact-info">
+    <i class="fas fa-envelope"></i>
+    <a href="mailto:alphazjaredz@gmail.com">alphazjaredz&#64;gmail.com</a>
+  </div>
+  <div class="contact-info">
+    <i class="fas fa-phone-alt"></i>
+    <a href="tel:+254798374027">(+254) 798374027</a>
+  </div>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="https://wa.me/254798374027"><i class="fab fa-whatsapp"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+  </div>
+</div>
+
+
+<nav class="navbar">
+  <div class="icon">
+    <!-- Use FontAwesome Wi-Fi icon -->
+    <fa-icon [icon]="['fas', 'wifi']" class="wifi-icon-large"></fa-icon>
+    <h2 class="logo">Alpha<span class="blue" style="color: #ff6600;">Net</span></h2>
+  </div>
+  <div class="Menu">
+    <ul>
+      <li><a routerLink="/" routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}"ariaCurrentWhenActive="page">Home</a></li>
+      <li><a routerLink="/about" routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}"ariaCurrentWhenActive="page">About</a></li>
+      <li><a routerLink="/packages" routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}"ariaCurrentWhenActive="page">Packages</a></li>
+      <li><a routerLink="/pricing" routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}"ariaCurrentWhenActive="page">Pricing</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active"[routerLinkActiveOptions]="{exact:true}"ariaCurrentWhenActive="page">Contact</a></li>
+    </ul>
+  </div>
+  <button class="contact-sales"><a routerLink="/contact-sales">Contact Sales</a></button>
+</nav>
