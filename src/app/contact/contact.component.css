@@ -1,0 +1,487 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Packages Section */
+.Packages {
+  background-color: #333;
+  color: #ff6600;
+  padding: 20px;
+  text-align: center;
+  margin-top: 55px; /* Adding space between the content and the Packages section */
+}
+
+.Packages h1 {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  text-align: left;
+  font-size: 40px;
+  color: #fff;
+}
+
+.contact-number {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 25px;
+}
+
+.contact-number fa-icon {
+  color: #fff;
+  margin-right: 8px; /* Adds space between the icon and the text */
+  font-size: 25px;
+}
+
+.check-coverage {
+  background-color: #ff6600;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px; /* More rounded ends */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.check-coverage:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.packages-container {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  position: relative; /* Ensure the overlapping works properly */
+  height: 300px;
+  padding: 20px 20px;
+}
+
+/* Package Animation */
+@keyframes waveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); /* Move up */
+  }
+  100% {
+    transform: translateY(0); /* Move back to original position */
+  }
+}
+
+.package {
+  background-color: #fff;
+  border: 1px solid #ff6600;
+  padding: 120px;
+  width: 100%; /* Make the packages as wide as the container */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin: 20px;
+  position: relative;
+  top: 1cm;
+  height: 155px;
+  animation: waveUpDown 1.5s ease-in-out forwards; /* Animation with a finite duration */
+}
+
+.package:nth-child(1) {
+  animation-delay: 0s; /* No delay for the first package */
+}
+
+.package:nth-child(2) {
+  animation-delay: 0.5s; /* Delay for the second package */
+}
+
+.package:nth-child(3) {
+  animation-delay: 1s; /* Delay for the third package */
+}
+
+.package-2 {
+  background-color: #ff6600;
+  color: black; /* Adjust text color for better readability */
+}
+
+/* Packages-connections Section */
+.Packages-connections {
+  padding: 20px;
+  background-color: #f0f0f0; /* Optional: Set background color */
+}
+
+.Packages-connections h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.header-container {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.coverage-heading {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.check-coverage {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.check-coverage mat-icon {
+  vertical-align: middle;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column; /* Change to column to stack icon above text */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  flex: 1;
+  max-width: 30%; /* Adjust based on your design */
+  min-width: 150px; /* Ensure they don't get too narrow */
+  background-color: #fff; /* Background color for info boxes */
+  color: #333; /* Text color inside info boxes */
+}
+
+.info-box i {
+  font-size: 24px; /* Adjust icon size */
+  margin-bottom: 10px; /* Add space between icon and text */
+  color: #ff6600; /* Icon color */
+}
+
+.info-box a {
+  text-decoration: none;
+  color: #ff6600; /* Link color */
+}
+
+.info-box a:hover {
+  text-decoration: underline;
+}
+
+/* Why We Are Better Section */
+.why-we-are-better {
+  margin-top: 5cm;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 40px 20px;
+}
+
+.why-we-are-better .content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.why-we-are-better .image-container {
+  width: 50%;
+  background-image: url('../../assets/images/wifi7.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  border-radius: 10px;
+  animation: slideUp 1s ease-out; /* Apply the animation */
+}
+
+.why-we-are-better .text-content {
+  width: 45%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.why-we-are-better .text-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.why-we-are-better .text-content p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.why-we-are-better .text-content h3 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #ff6600;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.icon-text .icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #ff6600;
+}
+
+/* Contact Header Styles */
+.contact-header {
+  text-align: center;
+  margin: 20px;
+  color: #011b33; /* Color for heading and text */
+  font-family: 'Poppins', sans-serif; /* Poppins font */
+  overflow: hidden; /* Ensure no overflow is visible during animation */
+}
+
+.contact-header h1,
+.contact-header p {
+  opacity: 0; /* Start hidden */
+  transform: translateY(-20px); /* Start above the original position */
+  animation: slideIn 1s ease-out forwards; /* Apply the animation */
+}
+
+.contact-header h1 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #ff6600;
+  animation-delay: 0.5s; /* Delay for h1 */
+}
+
+.contact-header p {
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif; /* Poppins font */
+  font-size: 50px;
+  font-weight: 700;
+  animation-delay: 1s; /* Delay for p */
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Contact Us Section */
+.contact-us {
+  background-color: #f5f2f8; /* Background color */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Add padding to inside of the container */
+  color: #011b33; /* Text color for better contrast */
+  margin: 0 40px; /* Remove top margin and add horizontal margin */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between; /* Adjusted to push map to the left */
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 5px; /* Distance between the map and info-form container */
+}
+
+.map-container {
+  flex: 1;
+  width: calc(45% - 75px); /* Reduced width for the map container */
+  padding: 0; /* Removed padding */
+  margin-right: 5px;
+  border-radius: 10px; /* Rounded corners for consistency */
+  overflow: hidden; /* Ensures map does not overflow */
+}
+
+.info-form-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-width: 300px;
+}
+
+.upper-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.lower-container {
+  width: 100%;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-between; /* Ensure all info-boxes are on the same line */
+  padding: 10px; /* Reduced padding */
+  width: 100%;
+}
+
+/* Form Container Styles */
+/* Form Container Styles */
+.form-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center items horizontally */
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-box {
+  width: 100%; /* Full width of the container */
+  max-width: 500px; /* Max width for larger screens */
+  margin-bottom: 15px; /* Space between form fields */
+  display: flex;
+  flex-direction: column; /* Stack label and input vertically */
+}
+.form-box-message {
+  flex: 2; /* Make the message box larger */
+  height: 70px; /* Adjust the height as needed */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Submit Button Styles */
+.form-box-submit {
+  display: block;
+  justify-content: center; /* Center the button */
+  margin-top: 50px; /* Adjusted margin */
+}
+
+.form-box-submit button {
+  background-color: #fff; /* Button background color */
+  color: #ff6600; /* Button text color */
+  padding: 10px 20px; /* Button padding */
+  border: 2px solid #ff6600; /* Add border with color #ff6600 */
+  border-radius: 17px; /* Button rounded corners */
+  cursor: pointer; /* Change cursor on hover */
+  font-size: 16px; /* Button text size */
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+.form-box-submit button:hover {
+  background-color: #ff6600; /* Button background color on hover */
+  color: #fff; /* Button text color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  /* Existing styles for mobile responsiveness */
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .map-container,
+  .info-form-container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .map-container {
+    width: 100%; /* Full width on smaller screens */
+    height: 300px; /* Adjust height as needed */
+  }
+
+  .contact-header h1 {
+    font-size: 24px; /* Smaller font size for mobile */
+  }
+
+  .contact-header p {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .info-container {
+    flex-direction: column; /* Stack info boxes vertically */
+    align-items: center; /* Center align items for consistency */
+  }
+
+  .info-box {
+    width: 100%; /* Full width for each info-box */
+    max-width: none; /* Remove max-width to allow full width */
+    margin: 10px 0; /* Add vertical spacing between boxes */
+    text-align: center; /* Center text inside info-box */
+  }
+
+  .form-box,
+  .form-box-message {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /* Adjust Packages Section for mobile */
+  .packages-container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .package {
+    margin: 10px 0;
+    width: 90%; /* Full width on smaller screens */
+    padding: 80px;
+  }
+
+  .Packages h1 {
+    font-size: 32px;
+  }
+
+  .contact-number {
+    font-size: 18px;
+  }
+
+  /* Adjust Packages-connections Section for mobile */
+  .info-member {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 10px 0;
+    text-align: center; /* Center the text */
+  }
+
+  .Packages-connections h1 {
+    font-size: 24px;
+  }
+
+  /* Why We Are Better Section for mobile */
+  .why-we-are-better .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .why-we-are-better .image-container,
+  .why-we-are-better .text-content {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .why-we-are-better .text-content h2 {
+    font-size: 28px;
+  }
+}

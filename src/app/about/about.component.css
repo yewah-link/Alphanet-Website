@@ -1,0 +1,264 @@
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+/* who we are */
+.whoWeAre {
+  background-color: #319795;
+  color: #333;
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+  margin-top: 6cm;
+  padding-left: 40px; /* Add space from the left */
+  padding-right: 40px; /* Add space from the right */
+}
+
+.wifi-icon-middle {
+  margin-right: 2px;
+  font-size: 13px;
+  color: #ff6600;
+}
+
+.section-title {
+  margin-bottom: 10px;
+  text-align: center; /* Center the section title */
+}
+
+.section-title h2 {
+  font-size: 16px; /* Smaller font size */
+  color: #000;
+  font-weight: 400;
+  display: inline-block; /* Make the title inline-block to center with the icon */
+  position: relative;
+}
+
+/* Content container styles */
+.content-container {
+  display: flex;
+  align-items: stretch; /* Stretch items to match height */
+  padding: 0px 20px; /* Add padding to avoid content touching edges */
+  margin: 0 auto; /* Center the content */
+  max-width: 1200px; /* Set a max-width to reduce size of container */
+}
+
+/* Text content styles */
+.text-content {
+  width: 45%; /* Reduced width */
+  margin-right: 5%;
+
+  /* Apply slide-in animation from the left with a delay */
+  animation: slideInFromLeft 1s ease-out forwards;
+  animation-delay: 0.75s; /* Start animation after 0.75 seconds */
+  opacity: 0; /* Start hidden for effect */
+}
+
+.text-content h1 {
+  font-size: 50px; /* Reduced font size */
+  margin-bottom: 0; /* Remove bottom margin of h1 */
+  margin-top: 0;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  color: #011b33;
+}
+
+.text-content p {
+  line-height: 1.6;
+  margin-top: 0; /* Remove top margin of p */
+}
+
+/* Image container styles */
+.image-container {
+  width: 45%; /* Reduced width */
+  text-align: right;
+  display: flex; /* Add flex display */
+  align-items: center; /* Align items vertically */
+
+  /* Apply slide-in animation from the right */
+  animation: slideInFromRight 1s ease-out forwards;
+  opacity: 0; /* Start hidden for effect */
+}
+
+.image-container img {
+  width: 100%;
+  height: auto; /* Auto height to maintain aspect ratio */
+  max-height: 60vh; /* Adjusted max height */
+  border-radius: 10px;
+  content: url('../../assets/images/wifi1.jpg'); /* Call image from CSS */
+}
+
+/* Additional container styles */
+.additional-container {
+  width: 100%; /* Full width for the container */
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.additional-image-container {
+  width: 15%; /* Reduced width for the image container */
+  margin-right: 20px; /* Increased space between image and text */
+
+  /* Apply slide-in animation from the right */
+  animation: slideInFromRight 1s ease-out forwards;
+  opacity: 0; /* Start hidden for effect */
+}
+
+.additional-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  content: url('../../assets/images/wifi3.jpg'); /* Image path from CSS */
+}
+
+.additional-text-content {
+  width: 75%; /* Adjusted width for text content */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column; /* Ensure text starts at the top */
+
+  /* Apply slide-in animation from the left with a delay */
+  animation: slideInFromLeft 1s ease-out forwards;
+  animation-delay: 0.75s; /* Start animation after 0.75 seconds */
+  opacity: 0; /* Start hidden for effect */
+}
+
+.additional-text-content h2 {
+  font-size: 24px;
+  color: #ff6600;
+  font-weight: 400;
+  margin: 0; /* Remove margins for better alignment */
+}
+
+.additional-text-content p {
+  line-height: 1.6;
+  margin: 0; /* Remove margins for better alignment */
+}
+
+/* Keyframes for slide-in animation from the right */
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%); /* Start offscreen to the right */
+    opacity: 0; /* Fully transparent */
+  }
+  to {
+    transform: translateX(0); /* Slide into position */
+    opacity: 1; /* Fully opaque */
+  }
+}
+
+/* Keyframes for slide-in animation from the left */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%); /* Start offscreen to the left */
+    opacity: 0; /* Fully transparent */
+  }
+  to {
+    transform: translateX(0); /* Slide into position */
+    opacity: 1; /* Fully opaque */
+  }
+}
+
+/* Responsive styles for phones */
+@media (max-width: 768px) {
+  /* General styles */
+  body {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  /* Who we are section */
+  .whoWeAre {
+    font-size: 16px; /* Reduce font size for better readability */
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 2cm; /* Adjust top margin for smaller screens */
+  }
+
+  .section-title h2 {
+    font-size: 14px; /* Further reduce font size */
+  }
+
+  /* Content container styles */
+  .content-container {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 0 10px; /* Add padding to avoid content touching edges */
+    margin: 0 auto; /* Center the content */
+  }
+
+  /* Text content styles */
+  .text-content {
+    width: 100%; /* Full width */
+    margin-right: 0; /* No margin on the right */
+    margin-bottom: 20px; /* Add space below */
+    animation: none; /* Disable animation for simplicity */
+    opacity: 1; /* Ensure visibility */
+  }
+
+  .text-content h1 {
+    font-size: 36px; /* Reduce header font size */
+  }
+
+  .text-content p {
+    font-size: 16px; /* Reduce paragraph font size */
+  }
+
+  /* Image container styles */
+  .image-container {
+    width: 100%; /* Full width */
+    text-align: center; /* Center align */
+    animation: none; /* Disable animation */
+    opacity: 1; /* Ensure visibility */
+    margin-bottom: 20px; /* Add margin below for spacing */
+  }
+
+  /* Additional container styles */
+  .additional-container {
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .additional-image-container {
+    width: 100%; /* Full width */
+    margin-right: 0; /* No margin */
+    margin-bottom: 20px; /* Add space below */
+    animation: none; /* Disable animation */
+    opacity: 1; /* Ensure visibility */
+  }
+
+  .additional-text-content {
+    width: 100%; /* Full width */
+    animation: none; /* Disable animation */
+    opacity: 1; /* Ensure visibility */
+  }
+
+  .additional-text-content h2 {
+    font-size: 20px; /* Reduce font size */
+  }
+
+  .additional-text-content p {
+    font-size: 14px; /* Reduce font size */
+  }
+}
