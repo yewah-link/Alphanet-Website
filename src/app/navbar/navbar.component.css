@@ -25,12 +25,14 @@
   color: #333;
   text-decoration: none;
   font-family: Arial, sans-serif;
+  font-size: 16px; /* Default font size */
 }
 
 .contact-info a:hover {
   color: #ff6600; /* Color change on hover */
 }
 
+/* Social icons styles */
 .social-icons {
   display: flex;
   align-items: center;
@@ -156,8 +158,40 @@
     padding: 10px 20px; /* Adjust padding for smaller screens */
     justify-content: space-between; /* Ensure spacing is correct */
   }
+
+  /* Reduce spacing between social icons */
+  .social-icons a {
+    margin-left: 10px; /* Reduced space between social icons */
+  }
+
+  /* Hide the menu on small screens */
+  .navbar .Menu {
+    display: none;
+  }
+
+  /* Hide the contact sales button on small screens */
+  .contact-sales {
+    display: none;
+  }
+
+  /* Show the menu icon on small screens */
+  .navbar .menu-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  /* Hide the email address and show only icons on very small screens */
+  .contact-info a {
+    display: none; /* Hide email address */
+  }
+
+  .contact-info i {
+    font-size: 20px; /* Ensure icon size is adequate */
+  }
 }
 
+/* Media Queries for extra small screens */
 @media (max-width: 480px) {
   .navbar {
     padding: 0.5px 20px; /* Adjust padding for smaller screens */
